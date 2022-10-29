@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="with=device-width,initial-scale=1.0">
+  <title>Contact - J&J Interactive</title>
+  <link rel="icon" type="image/png" href="images/logo3.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/170c05a0b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="logo-img"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a>PLATFORM <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="all.html">ALL</a></li>
+                <li><a href="browser.html">BROWSER</a></li>
+                <li><a href="pc.html">PC</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+  <!-- Contact Us -->
+  <section class="location">
+    <h1 class="map">Where You Can Find Us</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.7343558748116!2d120.95526211527729!3d14.326856987566234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d5b4b36ecb49%3A0xcdbf0315cce20e2a!2sDe%20La%20Salle%20University%20%E2%80%93%20Dasmari%C3%B1as!5e0!3m2!1sen!2sph!4v1666935680589!5m2!1sen!2sph"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fa fa-solid fa-house"></i>
+          <span>
+            <h5>DBB-B, 4115 West Ave</h5>
+            <p>Dasmariñas, Cavite, PH</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-solid fa-phone"></i>
+          <span>
+            <h5>(+63) 123 456 7890</h5>
+            <p>Monday to Saturday, 9:00 AM to 5:00 PM</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-solid fa-envelope"></i>
+          <span>
+            <h5>jairojoaquinafable@gmail.com<br>johnmikaelonebress@gmail.com</h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form action="mailto:johnmikaelonebres@yahoo.com" method="post" enctype="text/plain">
+          <input type="text" placeholder="Name" name="Name" required>
+          <input type="email" placeholder="Email address" name="Email Address" required>
+          <input type="text" placeholder="Subject" name="Subject">
+          <textarea rows="8" name="Message" required></textarea>
+          <button type="submit" name="" class="hero-btn red-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>You are welcome here if you are a part of our growing and lively community, working with us at one of our locations<br>across the world, or launching a piece of J&J into space.</p>
+    <a href="index.html"><img class="logo2-picture" src="images/logo2.png" alt="logo2-img"></a>
+    <div class="icons">
+      <a href="https://www.facebook.com/jmnbrzzz/" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jairojoaquinaf/" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/jmnbrzzz" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
+    </div>
+  </section>
+  <!-- JavaScript -->
+  <script>
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>

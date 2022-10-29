@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="with=device-width,initial-scale=1.0">
+  <title>PC Games - J&J Interactive</title>
+  <link rel="icon" type="image/png" href="images/logo3.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/170c05a0b7.js" crossorigin="anonymous"></script>
+  <script src="javascript-platform/scriptpc.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="logo-img"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a>PLATFORM <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="all.html">ALL</a></li>
+                <li><a href="browser.html">BROWSER</a></li>
+                <li><a href="pc.html">PC</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <div class="box">
+            <input id="searchbar" onkeyup="search_pc()" type="text" placeholder="Search" name="search">
+            <i class="fam fa-solid fa-magnifying-glass"></i>
+          </div>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>PC Games</h1>
+  </section>
+  <!-- List of PC Games -->
+  <section class="news">
+    <h1>List of PC Games</h1>
+    <p>Available games on PC.</p>
+    <div class="row" id="cards">
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>You are welcome here if you are a part of our growing and lively community, working with us at one of our locations<br>across the world, or launching a piece of J&J into space.</p>
+    <a href="index.html"><img class="logo2-picture" src="images/logo2.png" alt="logo2-img"></a>
+    <div class="icons">
+      <a href="https://www.facebook.com/jmnbrzzz/" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jairojoaquinaf/" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/jmnbrzzz" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
+    </div>
+  </section>
+  <!-- JavaScript -->
+  <script>
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    function search_pc() {
+      let input = document.getElementById('searchbar').value
+      input = input.toLowerCase();
+      let x = document.getElementsByClassName('card');
+
+      for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display = "none";
+        } else {
+          x[i].style.display = "list-item";
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

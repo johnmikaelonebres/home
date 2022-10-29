@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="with=device-width,initial-scale=1.0">
+  <title>About - J&J Interactive</title>
+  <link rel="icon" type="image/png" href="images/logo3.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/170c05a0b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="logo-img"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a>PLATFORM <i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="all.html">ALL</a></li>
+                <li><a href="browser.html">BROWSER</a></li>
+                <li><a href="pc.html">PC</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+  <!-- About Us Content -->
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>Welcome To J&J</h1>
+        <p>In everything we create at J&J Interactive, we put our hearts and souls into it. Every day, we live up to our basic beliefs so that we can keep providing our players with amazing content. We give approximately 600 million active players
+          and fans around the world access to worlds with endless possibilities through our cutting-edge games, creative services, and dynamic technology.</p>
+        <p>We believe in the value of positive play and that participating in a gaming community should be enjoyable, fair, and safe for everyone. We share the same dedication to creating a work environment that fosters innovation and creativity and
+          is as diverse as the communities we serve.</p>
+        <p>We seek out individuals with varied backgrounds who are creative, collaborative, and inclusive because they add to our culture and push us to grow as people and professionals. And we develop diverse leaders who promote a belonging
+          culture—a setting in which everyone can grow, realize their potential and create the best games—as well. Discover what makes us unique.</p>
+        <a href="all.html" class="hero-btn red-btn">EXPLORE NOW</a>
+      </div>
+      <div class="about-col">
+        <img src="images/about.jpg" alt="about-img">
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>You are welcome here if you are a part of our growing and lively community, working with us at one of our locations<br>across the world, or launching a piece of J&J into space.</p>
+    <a href="index.html"><img class="logo2-picture" src="images/logo2.png" alt="logo2-img"></a>
+    <div class="icons">
+      <a href="https://www.facebook.com/jmnbrzzz/" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jairojoaquinaf/" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/jmnbrzzz" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
+    </div>
+  </section>
+  <!-- JavaScript -->
+  <script>
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
